@@ -3,10 +3,15 @@ A multiplayer turn-based web app where users draft cricket players in real-time,
 
 ### 🚀 Features
 ✅ Real-time synchronization using WebSockets
+
 ✅ Turn-based drafting with a 10-second timer
+
 ✅ Auto-pick if a user doesn’t select in time
+
 ✅ Persistent rooms with unique IDs
+
 ✅ Host controls (start game, manage turns)
+
 ✅ Player pool with 30+ cricket stars (Kohli, Smith, Bumrah, etc.)
 
 ### 🔧 Tech Stack
