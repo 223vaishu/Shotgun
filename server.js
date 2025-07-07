@@ -39,7 +39,12 @@ app.use(express.json());
 
 // Serve static files from the dist directory in production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'dist')));
+  app.use(express.static(path.join(__dirname, 'client', 'dist'))); // Adjust if needed
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+  });
+
 }
 
 // Cricket players database
